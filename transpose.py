@@ -1,7 +1,7 @@
 
 
 class Transpose:
-  
+  '''Class that takes the prescription and transposes it '''
 
     def __init__(self, sph, cyl, axis):
         self.sph= float(sph)
@@ -28,6 +28,7 @@ class Transpose:
         return 'Invalid input of the axis. Axis cannot be more than 180'
 
     def __str__ (self):
+      '''Returns a string of the transposed prescription in the standard format as known by Optometrists'''
         return 'The newly transposed is {} / {} X {}'.format(str(self.new_sph),str(self.new_cyl),str(self.new_axis))
 
 
